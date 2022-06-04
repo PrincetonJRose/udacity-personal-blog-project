@@ -1,0 +1,39 @@
+.blog-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.post-preview {
+    padding: 1em;
+    text-align: left;
+    width: 75%;
+    border-style: double;
+    border-radius: 5px;
+}
+
+.blogs-container a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media only screen and (min-width: 35em){
+    .post-preview {
+        max-width: 90em;
+        padding: 3em;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    .post-preview:hover {
+        background: #333;
+        color: #fff;
+        transition: ease 0.3s all;
+        cursor: pointer;
+    }
+}
