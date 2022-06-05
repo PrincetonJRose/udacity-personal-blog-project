@@ -11,18 +11,39 @@
 }
 
 .table-of-contents {
-    border: 2px double black;
+    border: 5px double black;
+    padding: 1em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .similar-items {
-    border: 2px solid black;
+    border: 3px solid black;
+    padding: 1em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+    
+.subtitle-container {
+    text-align: center;
+}
+
+#introduction img {
+    display: block;
+    margin: auto;
 }
 
 
 @media only screen and (min-width: 1224px) {
     .blog-post-container {
         display: grid;
-        grid-template-columns: minmax(225px, auto);
+        grid-template-columns: minmax(220px, auto);
         grid-template-rows: minmax(auto);
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
@@ -35,15 +56,9 @@
         grid-area: hd;
     }
     
-    .subtitle-container {
-        text-align: center;
-    }
-    
     #introduction img {
         width: 600px;
         height: 400px;
-        display: block;
-        margin: auto;
     }
 
     #content {
@@ -53,6 +68,58 @@
 
     #sidebar {
         grid-area: sd;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0;
+    }
+
+    .footer {
+        grid-area: ft;
+    }
+}
+
+@media only screen and (max-width: 1223) {
+    .blog-post-container {
+        display: grid;
+        grid-template-columns: minmax(auto);
+        grid-template-rows: minmax(auto);
+        grid-template-areas: 
+        "hd hd hd hd hd hd"
+        "sd sd sd sd sd sd"
+        "main main main main main main"
+        "sp sp sp sp sp sp"
+        "ft ft ft ft ft ft";
+        padding: 3em;
+    }
+    
+    #introduction {
+        grid-area: hd;
+    }
+    
+    #introduction img {
+        width: 200px;
+        height: 175px;
+    }
+
+    #content {
+        grid-area: main;
+        padding: 1em;
+    }
+
+    .table-of-contents {
+        grid-area: sd;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .similar-items {
+        grid-area: sp;
+        width: 70%;
+        display: flex;
+        justify-content: center;
     }
 
     .footer {
