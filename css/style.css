@@ -3,6 +3,10 @@
     font-family: monospace;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .center {
     display: flex;
     justify-content: center;
