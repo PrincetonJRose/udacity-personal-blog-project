@@ -4,7 +4,7 @@
     font-size: 30px;
 }
 
-section {
+.blog-post-section {
     display: flex;
     justify-content: center;
 }
@@ -15,6 +15,12 @@ section {
     width: 80%;
     border-style: double;
     border-radius: 5px;
+}
+
+.post-preview img {
+    float: right;
+    height: 100px;
+    width: 200px;
 }
 
 .blogs-container a {
