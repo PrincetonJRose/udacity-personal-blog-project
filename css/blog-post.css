@@ -80,7 +80,7 @@
     }
 }
 
-@media only screen and (max-width: 1223) {
+@media only screen and (max-width: 1223px) {
     .blog-post-container {
         display: grid;
         grid-template-columns: minmax(auto);
@@ -91,7 +91,7 @@
         "main main main main main main"
         "sp sp sp sp sp sp"
         "ft ft ft ft ft ft";
-        padding: 3em;
+        padding: 1em;
     }
     
     #introduction {
@@ -99,8 +99,8 @@
     }
     
     #introduction img {
-        width: 200px;
-        height: 175px;
+        width: 100%;
+        height: auto;
     }
 
     #content {
@@ -108,18 +108,15 @@
         padding: 1em;
     }
 
-    .table-of-contents {
+    #sidebar {
         grid-area: sd;
-        width: 70%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 
-    .similar-items {
-        grid-area: sp;
-        width: 70%;
-        display: flex;
-        justify-content: center;
+    .sticky {
+        width: 100%;
     }
 
     .footer {

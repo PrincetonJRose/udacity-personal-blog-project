@@ -37,6 +37,39 @@ nav a {
     float: left;
 }
 
+
+/* CSS for social media buttons taken from W3 schools
+https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: .3em;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+
 @media only screen and (min-width: 1224px) {
     nav a:hover {
         background: #333;
